@@ -1,9 +1,42 @@
 /* CUSTOM PROPS */
 :root {
-
+  --main-font: "Roboto", "Arial", sans-serif;
+  --main-bg-color: #de8a89;
+  --text-color: #fff;
+  --timer-color: #3e3c3d;
+  --temprature-color: #353334;
+  --load-color: #201e1f;
+  --next-button-color: #ecb9b8;
+  --start-btn-color: #131313;
 }
 
 /* FONT-FACE  */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+      url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+      url("../fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+      url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 /* GLOBAL-STYLES  */
@@ -23,9 +56,9 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.5;
   padding: 0;
